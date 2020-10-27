@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- 
+Author: Craig Scarboro
+--->
+<html>
+
+<head>
+
+	<style>
+		table, th, td {
+			border: 2px solid black;
+		}
+	</style>
+
+</head>
+
+<body>
+
+<h1>
+	Welcome to the Galactic Exchange!
+</h1>
+
+<h3>
+	The following form provides you a simple way to convert between currencies.
+	The recognized currencies include:
+</h3>
+
+<ul>
+	<li>usdollar</li>
+	<li>euro</li>
+	<li>xarn</li>
+	<li>icekrona</li>
+	<li>polandzloty</li>
+	<li>galacticrock</li>
+</ul>
+
+<table>
+
+	<tr>
+		<th>
+			<h2>
+				In Currency
+			</h2>
+		</th>
+		
+		<th>
+			<h2>
+				Out Currency
+			</h2>
+		</th>
+		
+		<th>
+			<h2>
+				Amount
+			</h2>
+		</th>
+		<th>
+			<h2>
+				Convert
+			</h2>
+		</th>
+	</tr>
+	
+	<form action="galactic_exchange.cgi" method="GET">
+	<tr>
+		<th>
+			<input type="text" name="inputCurrency">
+		</th>
+		
+		<th>
+			<input type="text" name="outputCurrency">
+		</th>
+		
+		<th>
+			<input type="number" name="amount">
+		</th>
+		<th>
+			<input type="submit">
+		</th>
+	</tr>
+	</form>
+
+</table>
+
+<br>
+
+<h3>
+	The following form provides you a simple way to look up the value of certain commodities.
+	The recognized commodities include:
+</h3>
+
+<ul>
+	<li>terrangold</li>
+	<li>terransilver</li>
+	<li>terrancopper</li>
+	<li>xarngold</li>
+	<li>xarnsilver</li>
+	<li>xarncopper</li>
+	<li>corn</li>
+	<li>wheat</li>
+	<li>coffee</li>
+	<li>xarnsugar</li>
+</ul>
+
+
+<table>
+
+	<tr>
+		<th>
+			<h2>
+				Commodity
+			</h2>
+		</th>
+		
+		<th>
+			<h2>
+				Look Up
+			</h2>
+		</th>
+		
+	</tr>
+	
+	<form action="galactic_exchange.cgi" method="GET">
+	<tr>
+		<th>
+			<input type="text" name="commodityName">
+		</th>
+		
+		<th>
+			<input type="submit">
+		</th>
+	</tr>
+	</form>
+
+</table>
+</body>
+
+</html>
